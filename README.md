@@ -1,68 +1,30 @@
-**THE 2.4.3 VERSION IS UNDER DEVELOPMENT, CHECK [V2.4.3 BRANCH](https://github.com/csotomon/Angular2-AdminLTE/tree/v2.4.3)**
+Your global Angular CLI version (6.0.7) is greater than your local
+version (1.6.0). The local Angular CLI version is used.
 
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+_                      _                 ____ _     ___
+/ \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+/ △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+/ ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+/_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+|___/
 
-Introduction
-============
+Angular CLI: 1.6.0
+Node: 8.11.2
+OS: win32 x64
+Angular: 5.1.1
+... animations, common, compiler, compiler-cli, core, forms
+... http, platform-browser, platform-browser-dynamic
+... platform-server, router
 
-This is the **Angular** version of **AdminLTE** -- what is a fully responsive admin template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself.
-
-For more AdminLTE information visit  [AdminLTE.IO](https://adminlte.io/)
-
-Installation
-------------
-
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine
-- Install Angular 2 Client.
-```bash
-npm install -g @angular/cli
-```
-- Clone the repository
-```bash
-git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
-```
-
-- Install the packages
-```bash
-cd Angular2-AdminLTE
-npm install
-```
-
-Running the application
-------------
-- On the folder project
-```
-ng serve
-```
-- For starter page Navigate to [http://localhost:4200/](http://localhost:4200/)
-- For admin page Navigate to [http://localhost:4200/admin](http://localhost:4200/admin)
-
-Browser Support
----------------
-- IE 9+
-- Firefox (latest)
-- Chrome (latest)
-- Safari (latest)
-- Opera (latest)
-
-Contribution
-------------
-Contribution are always **welcome and recommended**! Here is how:
-
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine ```git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git```
-- Make your changes
-- Create a pull request
-
-#### Contribution Requirements:
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers (see above for browser support).
-
-License
--------
-Angular2-AdminLTE is an open source project by that is licensed under [MIT](http://opensource.org/licenses/MIT).
-
- Credits
--------------
-[AdminLTE.IO](https://adminlte.io/)
-
+@angular/cli: 1.6.0
+@angular/language-service: 4.4.6
+@angular-devkit/build-optimizer: 0.0.36
+@angular-devkit/core: 0.0.22
+@angular-devkit/schematics: 0.0.42
+@ngtools/json-schema: 1.1.0
+@ngtools/webpack: 1.9.0
+@schematics/angular: 0.1.11
+@schematics/schematics: 0.0.11
+typescript: 2.4.2
+webpack: 3.10.0
