@@ -1,11 +1,8 @@
-
-
-
 import { Component, OnInit, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule }         from '@angular/forms';
 import { FormGroup, FormControl, FormArray, NgForm } from '@angular/forms';
-
+import { Router } from '@angular/router';
 import { environment } from './../../../environments/environment.prod';
 
 @Component({
@@ -20,10 +17,11 @@ export class MenuComponent implements OnInit {
     private api_url  = environment.api_url;
     private token = localStorage.getItem('token');
     private menuForm: FormGroup;
+    
     menu: any;
     menus: any;
 
-    constructor(private http: HttpClient) {
+    constructor(private http: HttpClient,private routerService: Router) {
         this.getMenus();
     }
 
@@ -46,8 +44,11 @@ export class MenuComponent implements OnInit {
 
     getMenus() {
         // console.log('Get Menus and Update Table');
-        return this.http.get(this.api_url+'/getMenus?token='+this.token).subscribe(menus => {
+        this.http.get(this.api_url+'/getMenus?token='+this.token).subscribe(menus => {
             this.menus = menus;
+        }, err => {
+            console.log('Error occured');
+            this.routerService.navigate(['auth/login']);
         });
     }
 

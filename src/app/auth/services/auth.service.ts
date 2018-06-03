@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 export class AuthService {
     constructor(
         private httpClient : HttpClient
-        private routerService: Router
         ) { }
     check() : boolean {
         return localStorage.getItem('token') ? true : false;
